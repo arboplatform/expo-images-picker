@@ -71,6 +71,7 @@ export interface ITopNavProps {
     onFinish: () => void
     backFunction?: () => void
     textStyle: StyleProp<TextStyle>
+    buttonStyle: StyleProp<ViewStyle>
     BackbuttonStyle: StyleProp<ViewStyle>
     NextbuttonStyle: StyleProp<ViewStyle>
 }
