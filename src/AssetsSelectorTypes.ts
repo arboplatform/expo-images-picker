@@ -71,7 +71,8 @@ export interface ITopNavProps {
     onFinish: () => void
     backFunction?: () => void
     textStyle: StyleProp<TextStyle>
-    buttonStyle: StyleProp<ViewStyle>
+    BackbuttonStyle: StyleProp<ViewStyle>
+    NextbuttonStyle: StyleProp<ViewStyle>
 }
 
 export type CustomTopNavigator = {
@@ -109,6 +110,8 @@ export type DefaultTopNavOptions = {
     doneFunction: (data: any) => void
     textStyle: StyleProp<TextStyle>
     buttonStyle: StyleProp<ViewStyle>
+    NextbuttonStyle:StyleProp<ViewStyle>
+    BackbuttonStyle:StyleProp<ViewStyle>
 }
 
 export type IComponentItems = {

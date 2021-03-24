@@ -10,22 +10,38 @@ export const DefaultTopNavigator = ({
     backFunction,
     onFinish,
     textStyle,
-    buttonStyle,
+    BackbuttonStyle,
+    NextbuttonStyle,
 }: ITopNavProps) => (
     <Navigator>
-        <SimpleButton style={buttonStyle} onPress={backFunction}>
+        <BackButton style={BackbuttonStyle} onPress={backFunction}>
             <Text style={textStyle}>{backText}</Text>
-        </SimpleButton>
+        </BackButton>
 
-        <Text style={textStyle}>{selected} Selected </Text>
+        <Text style={textStyle}>
+            {selected} {selected > 1 ? 'Selecionados' : 'Selecionado'}
+        </Text>
 
-        <SimpleButton style={buttonStyle} onPress={onFinish}>
+        <NextButton style={NextbuttonStyle} onPress={onFinish}>
             <Text style={textStyle}>{finishText}</Text>
-        </SimpleButton>
+        </NextButton>
     </Navigator>
 )
 
 const SimpleButton = styled.TouchableOpacity`
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 38px;
+`
+const BackButton = styled.TouchableOpacity`
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 38px;
+`
+
+const NextButton = styled.TouchableOpacity`
     justify-content: center;
     align-items: center;
     width: 100px;
