@@ -10,12 +10,14 @@ export const DefaultTopNavigator = ({
     backFunction,
     onFinish,
     textStyle,
+    backtextStyle,
+    nexttextStyle,
     BackbuttonStyle,
     NextbuttonStyle,
 }: ITopNavProps) => (
     <Navigator>
         <BackButton style={BackbuttonStyle} onPress={backFunction}>
-            <Text style={textStyle}>{backText}</Text>
+            <Text style={backtextStyle}>{backText}</Text>
         </BackButton>
 
         <Text style={textStyle}>
@@ -23,7 +25,7 @@ export const DefaultTopNavigator = ({
         </Text>
 
         <NextButton style={NextbuttonStyle} onPress={onFinish}>
-            <Text style={textStyle}>{finishText}</Text>
+            <Text style={nexttextStyle}>{finishText}</Text>
         </NextButton>
     </Navigator>
 )

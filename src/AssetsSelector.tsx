@@ -12,7 +12,7 @@ import {
     PagedInfo,
 } from './AssetsSelectorTypes'
 
-const defaultOptions: OptionsType = {
+const defaultOptions: OptionsType = { 
     assetsType: ['video', 'photo'],
     maxSelections: 5,
     margin: 2,
@@ -181,6 +181,8 @@ const AssetsSelector = ({
             )}
             {defaultTopNavigator && (
                 <DefaultTopNavigator
+                    backtextStyle={defaultTopNavigator.backtextStyle}
+                    nexttextStyle={defaultTopNavigator.nexttextStyle}
                     textStyle={defaultTopNavigator.textStyle}
                     buttonStyle={defaultTopNavigator.buttonStyle}
                     NextbuttonStyle={defaultTopNavigator.NextbuttonStyle}
