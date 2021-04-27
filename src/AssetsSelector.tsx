@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { Dimensions, View } from 'react-native'
 import styled from 'styled-components/native'
-import * as Permissions from 'expo-permissions'
-import { Asset, AssetsOptions, getAssetsAsync } from 'expo-media-library'
+import { Asset, Permissions } from 'react-native-unimodules'
+import { AssetsOptions, getAssetsAsync } from 'expo-media-library'
 import { AssetsSelectorList } from './AssetsSelectorList'
 import { DefaultTopNavigator } from './DefaultTopNavigator'
 

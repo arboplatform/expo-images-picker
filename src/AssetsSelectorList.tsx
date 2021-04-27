@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 import { FlatList } from 'react-native'
-import { Asset } from 'expo-media-library'
+import { Asset } from 'react-native-unimodules'
 import styled from 'styled-components/native'
 import { IComponentItem, IComponentItems } from './AssetsSelectorTypes'
 

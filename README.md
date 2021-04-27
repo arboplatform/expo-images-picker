@@ -1,3 +1,7 @@
+# SUPPORTS WITHOUT EXPO 40
+add ```android:requestLegacyExternalStorage="true"``` in AndroidManifest.xml
+inside <application />
+
 # expo-images-picker
 
 Multiple Asset Photos | Videos selecting package for Expo SDK 40+.

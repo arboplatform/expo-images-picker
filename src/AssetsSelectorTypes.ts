@@ -1,5 +1,6 @@
 import React, { JSXElementConstructor } from 'react'
-import { Asset, MediaTypeValue } from 'expo-media-library'
+import { Asset } from 'react-native-unimodules'
+import { MediaTypeValue } from 'expo-media-library'
 import { StyleProp, TextStyle, ViewStyle } from 'react-native'
 
 export interface IAssetSelectorProps {
